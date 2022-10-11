@@ -1,0 +1,998 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "goodby": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "bye,care,take": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "later,see,you": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "bye,for,now": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "go,i,must": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "hello": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hi": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "howdi": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "greet": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "a,give,joke,me": {
+            "intent": "joke.chucknorris",
+            "domain": "default"
+          },
+          "a,i,joke,need,think": {
+            "intent": "joke.chucknorris",
+            "domain": "default"
+          },
+          "a,could,give,joke,me,pleas": {
+            "intent": "joke.chucknorris",
+            "domain": "default"
+          },
+          "chang,i,my,schedul,to,want": {
+            "intent": "schedule.start",
+            "domain": "default"
+          },
+          "i,move,my,need,schedul,to": {
+            "intent": "schedule.start",
+            "domain": "default"
+          },
+          "can,chang,my,pleas,schedul,you": {
+            "intent": "schedule.start",
+            "domain": "default"
+          },
+          "00,19": {
+            "intent": "schedule.time",
+            "domain": "default"
+          },
+          "12pm": {
+            "intent": "schedule.time",
+            "domain": "default"
+          },
+          "12am": {
+            "intent": "schedule.time",
+            "domain": "default"
+          },
+          "advic,i,need": {
+            "intent": "None",
+            "domain": "default"
+          },
+          "advic,i,need,some": {
+            "intent": "None",
+            "domain": "default"
+          },
+          "advic,can,give,me,some,you": {
+            "intent": "None",
+            "domain": "default"
+          },
+          "do,i,should,what": {
+            "intent": "None",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "greetings.bye": "default",
+          "greetings.hello": "default",
+          "joke.chucknorris": "default",
+          "schedule.start": "default",
+          "schedule.time": "default",
+          "None": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "goodbye",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye take care",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you later",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye for now",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "i must go",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "howdy",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "Greetings",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "Give me a joke!",
+            "intent": "joke.chucknorris"
+          },
+          {
+            "domain": "default",
+            "utterance": "I think I need a joke",
+            "intent": "joke.chucknorris"
+          },
+          {
+            "domain": "default",
+            "utterance": "Could please give me a joke?",
+            "intent": "joke.chucknorris"
+          },
+          {
+            "domain": "default",
+            "utterance": "I want to change my schedule",
+            "intent": "schedule.start"
+          },
+          {
+            "domain": "default",
+            "utterance": "I need to move my schedule",
+            "intent": "schedule.start"
+          },
+          {
+            "domain": "default",
+            "utterance": "Can you please changed my schedule?",
+            "intent": "schedule.start"
+          },
+          {
+            "domain": "default",
+            "utterance": "19:00",
+            "intent": "schedule.time"
+          },
+          {
+            "domain": "default",
+            "utterance": "12pm",
+            "intent": "schedule.time"
+          },
+          {
+            "domain": "default",
+            "utterance": "12am",
+            "intent": "schedule.time"
+          },
+          {
+            "domain": "default",
+            "utterance": "I need advice",
+            "intent": "None"
+          },
+          {
+            "domain": "default",
+            "utterance": "I need some advice",
+            "intent": "None"
+          },
+          {
+            "domain": "default",
+            "utterance": "can you give me some advice?",
+            "intent": "None"
+          },
+          {
+            "domain": "default",
+            "utterance": "what should I do?",
+            "intent": "None"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "19": 1,
+              "goodby": 1,
+              "bye": 1,
+              "take": 1,
+              "care": 1,
+              "see": 1,
+              "you": 1,
+              "later": 1,
+              "for": 1,
+              "now": 1,
+              "i": 1,
+              "must": 1,
+              "go": 1,
+              "hello": 1,
+              "hi": 1,
+              "howdi": 1,
+              "greet": 1,
+              "give": 1,
+              "me": 1,
+              "a": 1,
+              "joke": 1,
+              "think": 1,
+              "need": 1,
+              "could": 1,
+              "pleas": 1,
+              "want": 1,
+              "to": 1,
+              "chang": 1,
+              "my": 1,
+              "schedul": 1,
+              "move": 1,
+              "can": 1,
+              "00": 1,
+              "12pm": 1,
+              "12am": 1,
+              "advic": 1,
+              "some": 1,
+              "what": 1,
+              "should": 1,
+              "do": 1
+            },
+            "intents": {
+              "greetings.bye": 1,
+              "greetings.hello": 1,
+              "joke.chucknorris": 1,
+              "schedule.start": 1,
+              "schedule.time": 1,
+              "None": 1
+            },
+            "intentFeatures": {
+              "greetings.bye": {
+                "goodby": 1,
+                "bye": 1,
+                "take": 1,
+                "care": 1,
+                "see": 1,
+                "you": 1,
+                "later": 1,
+                "for": 1,
+                "now": 1,
+                "i": 1,
+                "must": 1,
+                "go": 1
+              },
+              "greetings.hello": {
+                "hello": 1,
+                "hi": 1,
+                "howdi": 1,
+                "greet": 1
+              },
+              "joke.chucknorris": {
+                "give": 1,
+                "me": 1,
+                "a": 1,
+                "joke": 1,
+                "i": 1,
+                "think": 1,
+                "need": 1,
+                "could": 1,
+                "pleas": 1
+              },
+              "schedule.start": {
+                "i": 1,
+                "want": 1,
+                "to": 1,
+                "chang": 1,
+                "my": 1,
+                "schedul": 1,
+                "need": 1,
+                "move": 1,
+                "can": 1,
+                "you": 1,
+                "pleas": 1
+              },
+              "schedule.time": {
+                "19": 1,
+                "00": 1,
+                "12pm": 1,
+                "12am": 1
+              },
+              "None": {
+                "i": 1,
+                "need": 1,
+                "advic": 1,
+                "some": 1,
+                "can": 1,
+                "you": 1,
+                "give": 1,
+                "me": 1,
+                "what": 1,
+                "should": 1,
+                "do": 1
+              }
+            },
+            "featuresToIntent": {
+              "19": [
+                "schedule.time"
+              ],
+              "goodby": [
+                "greetings.bye"
+              ],
+              "bye": [
+                "greetings.bye"
+              ],
+              "take": [
+                "greetings.bye"
+              ],
+              "care": [
+                "greetings.bye"
+              ],
+              "see": [
+                "greetings.bye"
+              ],
+              "you": [
+                "greetings.bye",
+                "schedule.start",
+                "None"
+              ],
+              "later": [
+                "greetings.bye"
+              ],
+              "for": [
+                "greetings.bye"
+              ],
+              "now": [
+                "greetings.bye"
+              ],
+              "i": [
+                "greetings.bye",
+                "joke.chucknorris",
+                "schedule.start",
+                "None"
+              ],
+              "must": [
+                "greetings.bye"
+              ],
+              "go": [
+                "greetings.bye"
+              ],
+              "hello": [
+                "greetings.hello"
+              ],
+              "hi": [
+                "greetings.hello"
+              ],
+              "howdi": [
+                "greetings.hello"
+              ],
+              "greet": [
+                "greetings.hello"
+              ],
+              "give": [
+                "joke.chucknorris",
+                "None"
+              ],
+              "me": [
+                "joke.chucknorris",
+                "None"
+              ],
+              "a": [
+                "joke.chucknorris"
+              ],
+              "joke": [
+                "joke.chucknorris"
+              ],
+              "think": [
+                "joke.chucknorris"
+              ],
+              "need": [
+                "joke.chucknorris",
+                "schedule.start",
+                "None"
+              ],
+              "could": [
+                "joke.chucknorris"
+              ],
+              "pleas": [
+                "joke.chucknorris",
+                "schedule.start"
+              ],
+              "want": [
+                "schedule.start"
+              ],
+              "to": [
+                "schedule.start"
+              ],
+              "chang": [
+                "schedule.start"
+              ],
+              "my": [
+                "schedule.start"
+              ],
+              "schedul": [
+                "schedule.start"
+              ],
+              "move": [
+                "schedule.start"
+              ],
+              "can": [
+                "schedule.start",
+                "None"
+              ],
+              "00": [
+                "schedule.time"
+              ],
+              "12pm": [
+                "schedule.time"
+              ],
+              "12am": [
+                "schedule.time"
+              ],
+              "advic": [
+                "None"
+              ],
+              "some": [
+                "None"
+              ],
+              "what": [
+                "None"
+              ],
+              "should": [
+                "None"
+              ],
+              "do": [
+                "None"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "goodby",
+                "bye",
+                "take",
+                "care",
+                "see",
+                "you",
+                "later",
+                "for",
+                "now",
+                "i",
+                "must",
+                "go",
+                "hello",
+                "hi",
+                "howdi",
+                "greet",
+                "give",
+                "me",
+                "a",
+                "joke",
+                "think",
+                "need",
+                "could",
+                "pleas",
+                "want",
+                "to",
+                "chang",
+                "my",
+                "schedul",
+                "move",
+                "can",
+                "19",
+                "00",
+                "12pm",
+                "12am",
+                "advic",
+                "some",
+                "what",
+                "should",
+                "do"
+              ],
+              "intents": [
+                "greetings.bye",
+                "greetings.hello",
+                "joke.chucknorris",
+                "schedule.start",
+                "schedule.time",
+                "None"
+              ],
+              "perceptrons": [
+                [
+                  11.455840110778809,
+                  5.865931987762451,
+                  2.933074712753296,
+                  2.933074712753296,
+                  4.293435573577881,
+                  3.143671751022339,
+                  4.293435573577881,
+                  2.932680130004883,
+                  2.932680130004883,
+                  1.3707906007766724,
+                  5.177951335906982,
+                  5.177951335906982,
+                  -2.5278499126434326,
+                  -2.519340991973877,
+                  -2.510331869125366,
+                  -2.5008316040039062,
+                  -0.9658642411231995,
+                  -0.9658642411231995,
+                  -0.9161141514778137,
+                  -0.9161141514778137,
+                  -0.44647714495658875,
+                  -2.0600390434265137,
+                  -0.09198884665966034,
+                  -0.7772167921066284,
+                  -0.39143797755241394,
+                  -0.6713957190513611,
+                  -1.0855536460876465,
+                  -1.3385708332061768,
+                  -1.3385708332061768,
+                  -0.20894019305706024,
+                  -1.149938941001892,
+                  -1.2729170322418213,
+                  -1.2729170322418213,
+                  -2.4851722717285156,
+                  -2.4740779399871826,
+                  -1.8472347259521484,
+                  -0.8135847449302673,
+                  -1.3031342029571533,
+                  -1.3031342029571533,
+                  -1.3031342029571533,
+                  2.5404464587188578
+                ],
+                [
+                  -4.867000579833984,
+                  -2.5362861156463623,
+                  -1.2684786319732666,
+                  -1.2684786319732666,
+                  -1.5152932405471802,
+                  -2.039797067642212,
+                  -1.5152932405471802,
+                  -1.2673343420028687,
+                  -1.2673343420028687,
+                  -3.0991508960723877,
+                  -0.9852469563484192,
+                  -0.9852469563484192,
+                  9.082432746887207,
+                  9.081643104553223,
+                  9.049837112426758,
+                  9.016302108764648,
+                  -1.2197226285934448,
+                  -1.2197226285934448,
+                  -1.349631905555725,
+                  -1.349631905555725,
+                  -0.20147313177585602,
+                  -1.144271969795227,
+                  -0.18537083268165588,
+                  -0.5912718772888184,
+                  -0.26233047246932983,
+                  -0.4398169219493866,
+                  -0.6781651973724365,
+                  -0.8389514088630676,
+                  -0.8389514088630676,
+                  -0.1301102489233017,
+                  -0.5026535391807556,
+                  -2.558854341506958,
+                  -2.558854341506958,
+                  -4.9452738761901855,
+                  -4.9180707931518555,
+                  -0.8541393280029297,
+                  -0.3145848512649536,
+                  -0.666983425617218,
+                  -0.666983425617218,
+                  -0.666983425617218,
+                  5.085746150149196
+                ],
+                [
+                  -0.17829629778862,
+                  -0.1693103313446045,
+                  -0.07671450823545456,
+                  -0.07671450823545456,
+                  -0.03025735542178154,
+                  -0.7700865268707275,
+                  -0.03025735542178154,
+                  -0.06783553212881088,
+                  -0.06783553212881088,
+                  0.34123438596725464,
+                  -0.2956860661506653,
+                  -0.2956860661506653,
+                  -0.17704932391643524,
+                  -0.17654211819171906,
+                  -0.17600257694721222,
+                  -0.17543107271194458,
+                  1.9426709413528442,
+                  1.9426709413528442,
+                  5.080902576446533,
+                  5.080902576446533,
+                  2.5099170207977295,
+                  1.0953172445297241,
+                  0.10910733044147491,
+                  -0.01952890120446682,
+                  -0.1422550082206726,
+                  -0.4910264313220978,
+                  -0.28212079405784607,
+                  -0.6398954391479492,
+                  -0.6398954391479492,
+                  -0.28049206733703613,
+                  -0.7204769253730774,
+                  -0.18087369203567505,
+                  -0.18087369203567505,
+                  -0.22410720586776733,
+                  -0.2163887768983841,
+                  -1.693479299545288,
+                  -0.9528570771217346,
+                  -0.22447516024112701,
+                  -0.22447516024112701,
+                  -0.22447516024112701,
+                  0.17921980471920496
+                ],
+                [
+                  -0.11434733867645264,
+                  -0.16536611318588257,
+                  -0.07974594086408615,
+                  -0.07974594086408615,
+                  -0.4490060806274414,
+                  0.877784013748169,
+                  -0.4490060806274414,
+                  -0.06311451643705368,
+                  -0.06311451643705368,
+                  0.5125994086265564,
+                  -0.3331844210624695,
+                  -0.3331844210624695,
+                  -0.08099645376205444,
+                  -0.07790659368038177,
+                  -0.07493381947278976,
+                  -0.07207373529672623,
+                  -0.304170697927475,
+                  -0.304170697927475,
+                  -0.4415768086910248,
+                  -0.4415768086910248,
+                  -0.3392859101295471,
+                  0.673094630241394,
+                  -0.04219328612089157,
+                  1.5087016820907593,
+                  0.5749331712722778,
+                  2.6261467933654785,
+                  2.149844169616699,
+                  4.201092720031738,
+                  4.201092720031738,
+                  2.051232099533081,
+                  1.3267908096313477,
+                  -0.1565835028886795,
+                  -0.1565835028886795,
+                  -0.18159329891204834,
+                  -0.17467337846755981,
+                  -1.2153692245483398,
+                  -0.637868344783783,
+                  -0.31735941767692566,
+                  -0.31735941767692566,
+                  -0.31735941767692566,
+                  0.02031412755958851
+                ],
+                [
+                  -3.102703332901001,
+                  -1.6585956811904907,
+                  -0.8392868638038635,
+                  -0.8392868638038635,
+                  -0.9480090737342834,
+                  -1.3865717649459839,
+                  -0.9480090737342834,
+                  -0.8056480288505554,
+                  -0.8056480288505554,
+                  -1.9828529357910156,
+                  -0.6399044394493103,
+                  -0.6399044394493103,
+                  -3.080711603164673,
+                  -3.0640783309936523,
+                  -3.0468497276306152,
+                  -3.029045343399048,
+                  -0.8782843351364136,
+                  -0.8782843351364136,
+                  -0.6943337917327881,
+                  -0.6943337917327881,
+                  -0.018528088927268982,
+                  -0.6903147101402283,
+                  -0.11413104832172394,
+                  -0.34964194893836975,
+                  -0.09164179861545563,
+                  -0.1001262217760086,
+                  -0.3209765553474426,
+                  -0.3292490243911743,
+                  -0.3292490243911743,
+                  -0.004136234987527132,
+                  -0.43073147535324097,
+                  5.573476314544678,
+                  5.573476314544678,
+                  10.917754173278809,
+                  10.872572898864746,
+                  -0.8660133481025696,
+                  -0.4059547483921051,
+                  -0.5153844356536865,
+                  -0.5153844356536865,
+                  -0.5153844356536865,
+                  3.168134995551798
+                ],
+                [
+                  -0.4406452476978302,
+                  -0.48156559467315674,
+                  -0.22438478469848633,
+                  -0.22438478469848633,
+                  -0.7113044857978821,
+                  1.0882290601730347,
+                  -0.7113044857978821,
+                  -0.18808214366436005,
+                  -0.18808214366436005,
+                  3.539311408996582,
+                  -1.9423257112503052,
+                  -1.9423257112503052,
+                  -0.3592112958431244,
+                  -0.3562549948692322,
+                  -0.3543999493122101,
+                  -0.35297727584838867,
+                  1.3016585111618042,
+                  1.3016585111618042,
+                  -2.3210484981536865,
+                  -2.3210484981536865,
+                  -1.7009726762771606,
+                  2.4763882160186768,
+                  -0.13924790918827057,
+                  -0.27587345242500305,
+                  -0.35308709740638733,
+                  -1.6357815265655518,
+                  -0.5055375695228577,
+                  -1.7587260007858276,
+                  -1.7587260007858276,
+                  -1.1869847774505615,
+                  1.7987900972366333,
+                  -0.17770619690418243,
+                  -0.17770619690418243,
+                  -0.3416171371936798,
+                  -0.3398204743862152,
+                  7.289029121398926,
+                  1.0753498077392578,
+                  3.4612433910369873,
+                  3.4612433910369873,
+                  3.4612433910369873,
+                  0.36462075012273854
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "goodbye"
+      ],
+      [
+        "en",
+        "bye take care"
+      ],
+      [
+        "en",
+        "see you later"
+      ],
+      [
+        "en",
+        "bye for now"
+      ],
+      [
+        "en",
+        "i must go"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "howdy"
+      ],
+      [
+        "en",
+        "Greetings"
+      ],
+      [
+        "en",
+        "Give me a joke!"
+      ],
+      [
+        "en",
+        "I think I need a joke"
+      ],
+      [
+        "en",
+        "Could please give me a joke?"
+      ],
+      [
+        "en",
+        "I want to change my schedule"
+      ],
+      [
+        "en",
+        "I need to move my schedule"
+      ],
+      [
+        "en",
+        "Can you please changed my schedule?"
+      ],
+      [
+        "en",
+        "19:00"
+      ],
+      [
+        "en",
+        "12pm"
+      ],
+      [
+        "en",
+        "12am"
+      ],
+      [
+        "en",
+        "I need advice"
+      ],
+      [
+        "en",
+        "I need some advice"
+      ],
+      [
+        "en",
+        "can you give me some advice?"
+      ],
+      [
+        "en",
+        "what should I do?"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "greetings.bye": [
+          {
+            "answer": "see you soon!"
+          },
+          {
+            "answer": "Till next time"
+          },
+          {
+            "answer": "bye bye"
+          },
+          {
+            "answer": "have a great day"
+          }
+        ],
+        "greetings.hello": [
+          {
+            "answer": "Hey there!"
+          },
+          {
+            "answer": "Hello"
+          },
+          {
+            "answer": "Hi"
+          },
+          {
+            "answer": "Greetings"
+          }
+        ],
+        "schedule.start": [
+          {
+            "answer": "Sure. what time you want? (enter only time)"
+          },
+          {
+            "answer": "What time you want to changed your schedule? (enter only time)"
+          }
+        ],
+        "schedule.time": [
+          {
+            "answer": "You changed time successfully!"
+          }
+        ],
+        "None": [
+          {
+            "answer": "Sorry, I don't understand"
+          },
+          {
+            "answer": "I am not as smart as you wish"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}

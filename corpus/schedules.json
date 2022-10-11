@@ -1,0 +1,50 @@
+{
+  "name": "Corpus",
+  "locale": "en-US",
+  "data": [
+    {
+      "intent": "joke.chucknorris",
+      "utterances": [
+        "Give me a joke!",
+        "I think I need a joke",
+        "Could please give me a joke?"
+      ]
+    },
+    {
+      "intent": "schedule.start",
+      "utterances": [
+        "I want to change my schedule",
+        "I need to move my schedule",
+        "Can you please changed my schedule?"
+      ],
+      "answers": [
+        "Sure. what time you want? (enter only time)",
+        "What time you want to changed your schedule? (enter only time)"
+      ]
+    },
+    {
+      "intent": "schedule.time",
+      "utterances": [
+        "19:00",
+        "12pm",
+        "12am"
+      ],
+      "answers": [
+        "You changed time successfully!"
+      ]
+    },
+    {
+      "intent": "None",
+      "utterances": [
+        "I need advice",
+        "I need some advice",
+        "can you give me some advice?",
+        "what should I do?"
+      ],
+      "answers": [
+        "Sorry, I don't understand",
+        "I am not as smart as you wish"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "nlp": {
+      "corpora": [
+        "./corpus/schedules.json"
+      ]
+    }
+  },
+  "use": ["Basic", "ConsoleConnector"]
+}
