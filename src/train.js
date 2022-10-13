@@ -4,10 +4,10 @@ const manager = new NlpManager({ languages: ['en'] });
 
 const fs = require('fs');
 
-const files = fs.readdirSync('./intents');
+const files = fs.readdirSync('./src/intents');
 
 files.forEach((file) => {
-  let data = fs.readFileSync(`./intents/${file}`);
+  let data = fs.readFileSync(`./src/intents/${file}`);
   data = JSON.parse(data);
 
   const intent = file.replace('.json', '');
@@ -22,7 +22,7 @@ files.forEach((file) => {
 });
 
 const trainSave = async () => {
-  manager.addCorpus('./corpus/schedules.json');
+  manager.addCorpus('./src/corpus/schedules.json');
   await manager.train();
   manager.save();
 };

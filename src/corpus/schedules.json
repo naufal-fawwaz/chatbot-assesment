@@ -3,14 +3,6 @@
   "locale": "en-US",
   "data": [
     {
-      "intent": "joke.chucknorris",
-      "utterances": [
-        "Give me a joke!",
-        "I think I need a joke",
-        "Could please give me a joke?"
-      ]
-    },
-    {
       "intent": "schedule.start",
       "utterances": [
         "I want to change my schedule",
@@ -18,8 +10,23 @@
         "Can you please changed my schedule?"
       ],
       "answers": [
-        "Sure. what time you want? (enter only time)",
-        "What time you want to changed your schedule? (enter only time)"
+        "Sure. please choose session first",
+        "Alright. For now, please choose session you want to changed"
+      ]
+    },
+    {
+      "intent": "schedule.day",
+      "utterances": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "answers": [
+        "Alright, now please choose the project",
+        "Great! Now please choose the project you wish to changed"
       ]
     },
     {
@@ -31,6 +38,17 @@
       ],
       "answers": [
         "You changed time successfully!"
+      ]
+    },
+    {
+      "intent": "schedule.project",
+      "utterances": [
+        "I want to change project capacitor",
+        "Project capacitor",
+        "I want to change capacitor"
+      ],
+      "answers": [
+        "Alright, could you please enter your new time? (please enter HH:mm format)"
       ]
     },
     {
