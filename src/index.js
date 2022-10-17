@@ -1,6 +1,6 @@
 const { NlpManager } = require('node-nlp/src/nlp');
 
-const manager = new NlpManager({ languages: ['en'] });
+const manager = new NlpManager({ languages: ['en'], forceNer: true });
 manager.load();
 
 const express = require('express');
@@ -57,3 +57,9 @@ app.post('/message', async (req, res) => {
 app.listen(8080, () => {
   console.log('Listening on :8080');
 });
+
+// const { dockStart } = require('@nlpjs/basic');
+
+// (async () => {
+//   await dockStart();
+// })();

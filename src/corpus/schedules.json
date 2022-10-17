@@ -10,8 +10,8 @@
         "Can you please changed my schedule?"
       ],
       "answers": [
-        "Sure. please choose session first",
-        "Alright. For now, please choose session you want to changed"
+        "Sure. please choose what day you want to change first",
+        "Alright. For now, please choose day you want to changed"
       ]
     },
     {
@@ -22,33 +22,43 @@
         "Wednesday",
         "Friday",
         "Saturday",
-        "Sunday"
+        "Sunday",
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
       ],
       "answers": [
-        "Alright, now please choose the project",
-        "Great! Now please choose the project you wish to changed"
+        "Alright, now please choose the session",
+        "Great! Now please choose session you wish to changed"
+      ]
+    },
+    {
+      "intent": "schedule.session",
+      "utterances": [
+        "19:00-20:00",
+        "01:00-02:00",
+        "03:00-08:00"
+      ],
+      "answers": [
+        "Last step! Please enter the new time of your session"
       ]
     },
     {
       "intent": "schedule.time",
       "utterances": [
-        "19:00",
-        "12pm",
-        "12am"
+        "1",
+        "2",
+        "3",
+        "1 hours",
+        "2 hours",
+        "4",
+        "5",
+        "10"
       ],
       "answers": [
-        "You changed time successfully!"
-      ]
-    },
-    {
-      "intent": "schedule.project",
-      "utterances": [
-        "I want to change project capacitor",
-        "Project capacitor",
-        "I want to change capacitor"
-      ],
-      "answers": [
-        "Alright, could you please enter your new time? (please enter HH:mm format)"
+        "Great! You are successfully changed your schedule"
       ]
     },
     {
