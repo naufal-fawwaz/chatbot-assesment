@@ -54,8 +54,10 @@ app.post('/message', async (req, res) => {
   }
 });
 
-app.listen(8080, () => {
-  console.log('Listening on :8080');
+const normalizePort = process.env.PORT || 8080;
+
+app.listen(normalizePort, () => {
+  console.log(`Listening on :${normalizePort}`);
 });
 
 // const { dockStart } = require('@nlpjs/basic');
