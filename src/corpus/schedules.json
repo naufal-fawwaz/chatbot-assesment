@@ -42,6 +42,17 @@
         "03:00-08:00"
       ],
       "answers": [
+        "Now please choose the project you want to change"
+      ]
+    },
+    {
+      "intent": "schedule.projects",
+      "utterances": [
+        "project capacitor",
+        "Project Dudidudi",
+        "Project A B C"
+      ],
+      "answers": [
         "Last step! Please enter the new time of your session"
       ]
     },
